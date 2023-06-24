@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <p>Header</p>
+            
+        </div>
+        <div class="right">
+            <p>Sign Up</p>
+            <p>Profile</p>
+        </div>
+    </header>
+     <div id="root">
+    <!-- Sign Up Page -->
+        <div id="signup-page">
+            <h1>Sign Up</h1>
+            <form id="signup-form">
+                <input class="box" type="text" id="name" placeholder="Name">
+                <input class="box" type="email" id="email" placeholder="Email">
+                <input class="box" type="password" id="password" placeholder="Password">
+                <button id="myButton" type="submit">Sign Up</button>
+            </form>
+            <p id="signup-error" class="error"></p>
+            <p id="signup-success" class="success"></p>
+        </div>
+
+        <!-- Profile Page -->
+        <div id="profile-page">
+            <h1>Profile</h1>
+            <div id="user-details">
+                <p class="data" id="name-display"></p>
+                <p class="data" id="email-display"></p>
+                <p class="data" id="password-display"></p>
+             
+            </div>
+            <button id="logout-button">Logout</button>
+        </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
